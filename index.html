@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Price Tracker</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <label for="timeframe">Select Timeframe:</label>
+            <select id="timeframe">
+                <option value="1">1 Day</option>
+                <option value="7" selected>7 Days</option>
+                <option value="30">30 Days</option>
+            </select>
+        </div>
+        <div class="images">
+            <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=014" alt="Bitcoin Logo" class="bitcoin-logo">
+            <div class="bitcoin-text">
+                <h2>Bitcoin (BTC)</h2>
+                <p>The first decentralized digital currency, without a central bank or single administrator.</p>
+            </div>
+        </div>
+        <div id="chart-container">
+            <canvas id="cryptoChart"></canvas>
+        </div>
+        <div id="price-info">
+            <h2>Current Price: <span id="current-price">Loading...</span></h2>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Abdulrahman Sarmad. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<p>&copy; 2024 Abdulrahman Sarmad. All rights reserved.</p>
